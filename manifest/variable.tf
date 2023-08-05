@@ -61,3 +61,24 @@ variable "restart_policy" {
     error_message = "The restart_policy must be one of the following: Always, Never, OnFailure."
   }
 }
+
+variable "ContainerInstances" {
+  type = object ({
+      Container     = any
+      server = string
+      username = string
+      password = string
+    })
+
+  default = {
+    server = "settlemint.azurecr.io",
+    username = "admin",
+    password = "GcNOj/mMtmJali6EsHWTa/SqYyrPJ1i1/b1VjDvaMF+ACRB2OA1+",
+    "Container" : {
+      "EnvironmentVariables" : {
+        "NEW_RELIC_LICENSE_KEY" : "ff733d12c9887a0f9335befc80513bbdFFFFNRAL",
+        "NEW_RELIC_APP_NAME" : "Settlemint-DevOps"
+    }
+  }
+ }
+}
