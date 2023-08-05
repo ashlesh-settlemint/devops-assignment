@@ -71,13 +71,13 @@ variable "ContainerInstances" {
     })
 
   default = {
-    server = "settlemint.azurecr.io",
-    username = "admin",
-    password = "GcNOj/mMtmJali6EsHWTa/SqYyrPJ1i1/b1VjDvaMF+ACRB2OA1+",
+    server = "<REGISTRY SERVER -- change me>",
+    username = "<REGISTRY USERNAME -- CHANGE ME>",
+    password = "<REGISTRY PASSWORD -- CHANGE ME>",
     "Container" : {
       "EnvironmentVariables" : {
-        "NEW_RELIC_LICENSE_KEY" : "ff733d12c9887a0f9335befc80513bbdFFFFNRAL",
-        "NEW_RELIC_APP_NAME" : "Settlemint-DevOps"
+        "NEW_RELIC_LICENSE_KEY" : "<NEW RELIC LICENCE>",
+        "NEW_RELIC_APP_NAME" : "<NEW RELIC APP NAME>"
     }
   }
  }
