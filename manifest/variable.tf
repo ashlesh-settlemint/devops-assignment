@@ -4,9 +4,9 @@ variable "resource_group_location" {
   description = "Location for all resources."
 }
 
-variable "resource_group_name_prefix" {
+variable "resource_group_name" {
   type        = string
-  default     = "rg"
+  default     = "billingrg"
   description = "Prefix of the resource group name that's combined with a random value so name is unique in your Azure subscription."
 }
 
