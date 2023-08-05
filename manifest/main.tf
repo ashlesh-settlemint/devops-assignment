@@ -4,7 +4,6 @@ resource "random_pet" "rg_name" {
 
 data "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = var.resource_group_location
 }
 
 resource "random_string" "container_name" {
