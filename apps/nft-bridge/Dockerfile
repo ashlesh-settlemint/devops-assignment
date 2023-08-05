@@ -10,3 +10,4 @@ ENV PORT=3001
 RUN npx nx build nft-bridge
 ENTRYPOINT ["node"]
 CMD ["./dist/apps/nft-bridge/main.js"]
+EXPOSE 3001
