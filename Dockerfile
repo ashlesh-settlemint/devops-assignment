@@ -5,7 +5,7 @@ COPY . /app
 RUN npm install -g npm@9.8.1
 RUN npm install
 RUN npx nx run nft-bridge:lint
-ENV HOST=127.0.0.1
+ENV HOST=0.0.0.0
 ENV PORT=3001
 RUN npx nx build nft-bridge
 ENTRYPOINT ["node"]
