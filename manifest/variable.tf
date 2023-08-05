@@ -76,8 +76,8 @@ variable "ContainerInstances" {
     password = "<REGISTRY PASSWORD -- CHANGE ME>",
     "Container" : {
       "EnvironmentVariables" : {
-        "NEW_RELIC_LICENSE_KEY" : "<NEW RELIC LICENCE>",
-        "NEW_RELIC_APP_NAME" : "<NEW RELIC APP NAME>"
+        "NEW_RELIC_LICENSE_KEY" : "<NEW RELIC LICENCE -- CHANGE ME >",
+        "NEW_RELIC_APP_NAME" : "<NEW RELIC APP NAME -- CHANGE ME>"
     }
   }
  }
