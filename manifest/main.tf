@@ -2,7 +2,7 @@ resource "random_pet" "rg_name" {
   prefix = var.resource_group_name_prefix
 }
 
-resource "azurerm_resource_group" "rg" {
+data "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.resource_group_location
 }
@@ -16,8 +16,8 @@ resource "random_string" "container_name" {
 
 resource "azurerm_container_group" "container" {
   name                = "${var.container_group_name_prefix}-${random_string.container_name.result}"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
+  location            = data.azurerm_resource_group.rg.location
+  resource_group_name = data.azurerm_resource_group.rg.name
   ip_address_type     = "Public"
   os_type             = "Linux"
   restart_policy      = var.restart_policy
