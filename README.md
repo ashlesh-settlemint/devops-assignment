@@ -38,7 +38,5 @@ node ./dist/apps/nft-bridge/main.js
 
 ## Assignment Problem Statement
 
-Creation of CICD pipeline stages for the application at path - `./apps/nft-bridge`.
-
 1. Create a kubernetes cluster on any cloud environment of your choice using Terraform or any infrastructure-as-code tool.
 2. Deploy the node.js application on the cluster using Helm. 
